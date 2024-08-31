@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import PageHeader from "@/components/PageHeader.astro";
+import Shape from "@/components/Shape.astro";
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
+import { getEntryBySlug } from "astro:content";
+import { AiFillCheckCircle } from "react-icons/ai";
+import { markdownify } from "@/lib/utils/textConverter";
+import Calendar from "@/layouts/function-components/Calendar.jsx";
+import DownloadButton from "@/layouts/function-components/DownloadButton.jsx";
+
+const calendar = await getEntryBySlug("calendar", "index");
+const { cal_file, button } = calendar.data;
+const page_data = {
+  ...calendar.data,
+  content: calendar.body,
+};
+---
+
+<Base
+  title={calendar.data.title}
+  meta_title={calendar.data.meta_title}
+  description={calendar.data.description}
+  image={calendar.data.image}
+>
+  <Shape />
+  <section class="page-hero pb-14 pt-16">
+    <div class="container">
+
+      <div class="page-hero-content mx-auto max-w-[883px] text-center">
+        <PageHeader page_data={page_data} />
+      </div>
+
+      <div>
+        <Calendar file={cal_file} client:load />
+      </div>
+
+      {button.enable &&
+        <div class="mx-16 flex flex-col lg:flex-row lg:items-center lg:justify-between max-lg:text-center">
+          <DownloadButton file={cal_file}/>
+          <p class="mt-4 lg:mt-0 lg:ml-4">{button.description}</p>
+        </div>
+      }
+
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import PageHeader from "@/components/PageHeader.astro";
+import Shape from "@/components/Shape.astro";
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
+import { getEntryBySlug } from "astro:content";
+import { AiFillCheckCircle } from "react-icons/ai";
+import { markdownify } from "@/lib/utils/textConverter";
+
+const become_a_member = await getEntryBySlug("become-a-member", "index");
+const { steps, details} = become_a_member.data;
+const page_data = {
+  ...become_a_member.data,
+  content: become_a_member.body,
+};
+---
+
+<Base
+  title={become_a_member.data.title}
+  meta_title={become_a_member.data.meta_title}
+  description={become_a_member.data.description}
+  image={become_a_member.data.image}
+>
+  <Shape />
+  <section class="page-hero pb-14 pt-16">
+    <div class="container">
+      <div class="page-hero-content mx-auto max-w-[883px] text-center">
+        <PageHeader page_data={page_data} />
+      </div>
+
+      <div class="row mt-14">
+        {
+          steps.map((item: any, i: number) => (
+            <div class="mt-10 text-center sm:col-6 md:col-4 md:mb-0">
+              <div
+                class={`relative mx-auto mb-8 flex h-[184px] w-[184px] items-center justify-center rounded-xl bg-white p-4 shadow-lg ${
+                  steps.length - 1 !== i
+                    ? "after:absolute after:-right-4 after:-z-[1] after:hidden after:w-full after:translate-x-full after:border-b-2 after:border-dashed after:border-primary/50 after:content-[''] md:after:block"
+                    : undefined
+                }`}
+              >
+                <Image height={122} width={144} src={item.image} alt="" />
+              </div>
+              <h2 class="h5">{item.title}</h2>
+              <p class="mt-4" set:html={markdownify(item.description)} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      {
+        details.map((item: any, index: number) => (
+          <div class="gx-5 row mt-16 first:mt-12">
+            <div class={`lg:col-5 lg:order-1`}>
+              <div class="relative">
+                <h2 class="lg:text-4xl">{item.title}</h2>
+              </div>
+            </div>
+            <div class={`mt-6 lg:col-7 lg:mt-0 lg:order-1`}>
+              <div class="">
+                <p className="mt-6 text-dark lg:-ml-4" set:html={markdownify(item.description)} />
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,77 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Barcelona",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "About AEGEE-Barcelona",
+          "url": "/about-barcelona"
+        },
+        {
+          "name": "History",
+          "url": "/history"
+        },
+        {
+          "name": "Current board",
+          "url": "/board"
+        }
+      ]
+    },
+    {
+      "name": "Europe",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "About AEGEE-Europe",
+          "url": "/about-europe"
+        },
+        {
+          "name": "European events",
+          "url": "/european-events"
+        },
+        {
+          "name": "Summer universities",
+          "url": "/summer-universities"
+        }
+      ]
+    },
+    {
+      "name": "Activity calendar",
+      "url": "/calendar"
+    },
+    {
+      "name": "FAQ",
+      "url": "/faq"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+
+  "footer": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Elements",
+      "url": "/elements"
+    },
+    {
+      "name": "Changelog",
+      "url": "/changelog"
+    }
+  ]
+}
