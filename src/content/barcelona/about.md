@@ -10,7 +10,7 @@ counter:
   - name: "Nationalities among our active members"
     number: 10
     color: "#5EE2A0"
-  - name: "Activities organized in 2024"
+  - name: "Local activities organized in 2024"
     number: 25
     color: "#FE6019"
   - name: "Visiting AEGEEans from other antennas in 2024"

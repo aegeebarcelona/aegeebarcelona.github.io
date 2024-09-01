@@ -4,7 +4,7 @@ import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { Image } from "astro:assets";
 import { getEntryBySlug } from "astro:content";
-import { IoMail, IoLogoInstagram } from "react-icons/io5";
+import { IoMailOutline, IoLogoInstagram } from "react-icons/io5";
 import { markdownify } from "@/lib/utils/textConverter";
 
 const entry = await getEntryBySlug("contact", "index");
@@ -33,17 +33,17 @@ const page_data = {
         <p class="mt-4" set:html={markdownify(contact.faq_notice)} />
       </div>
       <div class="shadow-lg rounded-lg p-6 md:p-10 max-w-lg w-full mx-auto">
-        <h1 class="text-xl md:text-3xl font-semibold text-center mb-6">{contact.channels.title}</h1>
+        <h1 class="text-xl md:text-xl font-semibold text-center mb-6">{contact.channels.title}</h1>
         <div class="space-y-4">
           {contact.channels.channel_list.map((channel, index) => (
             <a
               key={index}
               href={channel.link}
-              class="flex items-center btn btn-outline-primary text-lg"
+              class="flex items-center btn btn-outline-primary text-3xl"
               target="_blank"
               rel="noopener noreferrer"
             >
-              { channel.icon === "email" && <IoMail /> }
+              { channel.icon === "email" && <IoMailOutline /> }
               { channel.icon === "instagram" && <IoLogoInstagram /> }
               <span class="text-lg font-medium ml-4">{channel.name}</span>
             </a>

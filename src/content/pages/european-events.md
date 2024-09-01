@@ -26,10 +26,14 @@ If you have any doubt about the event, you can directly contact the organizers; 
 
 There are also other, less common events, that happen at a European level.
 
-> Fill the sections below. Is any of these important enough to have their own section above? Also am I forgetting anything (like EoT, would this go here?)
+> Fill the sections below. Is any of these important enough to have their own section above?
 
 #### Network meetings
 
 #### Conferences
 
 #### Training events
+
+### Thematic projects
+
+> EoT, etc. Listed in the [AEGEE website](https://www.aegee.org/about-aegee/).
