@@ -48,6 +48,7 @@ service:
 
 #testimonial
 testimonial:
+  enable: false
   title: What some of our members have to say
   testimonial_list:
     - author: AAA
