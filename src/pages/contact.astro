@@ -4,6 +4,8 @@ import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { Image } from "astro:assets";
 import { getEntryBySlug } from "astro:content";
+import { IoMail, IoLogoInstagram } from "react-icons/io5";
+import { markdownify } from "@/lib/utils/textConverter";
 
 const entry = await getEntryBySlug("contact", "index");
 const { contact_form_action } = config.params;
@@ -26,72 +28,26 @@ const page_data = {
 
   <section class="section pt-0">
     <div class="container">
-      <div class="row">
-        <div class="mb-10 text-center md:col-6 md:order-2 md:mb-0 md:pt-9">
-          <div class="contact-img relative inline-flex pb-5 pl-5">
-            <Image
-              src="/images/contact-img.png"
-              height={544}
-              width={500}
-              alt=""
-            />
-            <Image
-              class="absolute bottom-0 left-0 -z-[1] h-14 w-14"
-              src="/images/shape-2.png"
-              alt=""
-              height={56}
-              width={56}
-            />
-          </div>
-        </div>
-        <div class="md:col-6 md:order-1">
-          <form
-            class="lg:max-w-[484px]"
-            action={contact_form_action}
-            method="POST"
-          >
-            <div class="form-group mb-5">
-              <label class="form-label" for="name">Full Name</label>
-              <input
-                class="form-control"
-                type="text"
-                id="name"
-                placeholder="Your Full Name"
-              />
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="eamil">Email Adrdess</label>
-              <input
-                class="form-control"
-                type="text"
-                id="email"
-                placeholder="Your  Email Address"
-              />
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="reason">Reason/Purpose</label>
-              <select name="reason" id="reason" class="form-select" required>
-                <option value="">Select reason/purpose</option>
-                <option value="membership">New membership</option>
-                <option value="membership">Exchange proposal</option>
-                <option value="membership">Partnership proposal</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="message">Message Here</label>
-              <textarea
-                class="form-control h-[150px]"
-                id="message"
-                cols="30"
-                rows="10"></textarea>
-            </div>
-            <input
-              class="btn btn-primary block w-full"
-              type="submit"
-              value="Send Message"
-            />
-          </form>
+      <div class="w-9/12 mx-auto mb-10 text-center">
+        <p class="text-lg" set:html={markdownify(contact.description)} />
+        <p class="mt-4" set:html={markdownify(contact.faq_notice)} />
+      </div>
+      <div class="shadow-lg rounded-lg p-6 md:p-10 max-w-lg w-full mx-auto">
+        <h1 class="text-xl md:text-3xl font-semibold text-center mb-6">{contact.channels.title}</h1>
+        <div class="space-y-4">
+          {contact.channels.channel_list.map((channel, index) => (
+            <a
+              key={index}
+              href={channel.link}
+              class="flex items-center btn btn-outline-primary text-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              { channel.icon === "email" && <IoMail /> }
+              { channel.icon === "instagram" && <IoLogoInstagram /> }
+              <span class="text-lg font-medium ml-4">{channel.name}</span>
+            </a>
+          ))}
         </div>
       </div>
     </div>
