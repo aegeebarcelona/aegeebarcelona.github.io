@@ -58,9 +58,9 @@ const { pathname } = Astro.url;
         main.map((menu) => (
           <>
             {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative cursor-pointer  dropdown-button">
+              <li class="nav-item nav-dropdown group relative">
                 <span
-                  class={`nav-link inline-flex items-center ${
+                  class={`nav-link inline-flex items-center cursor-pointer dropdown-button ${
                     menu.children?.map(({ url }) => url).includes(pathname) ||
                     menu.children
                       ?.map(({ url }) => `${url}/`)
@@ -123,14 +123,6 @@ const { pathname } = Astro.url;
 </header>
 
 <script is:inline>
-  document.querySelectorAll(".dropdown-button").forEach((button) => {
-    button.addEventListener("click", (e) => {
-      const dropdown = e.target.nextElementSibling;
-      dropdown.classList.toggle(
-        dropdown.style === "hidden" ? "block" : "hidden"
-      );
-    });
-  });
 
   //sticky header
   document.addEventListener("astro:page-load", () => {
@@ -143,4 +135,33 @@ const { pathname } = Astro.url;
       }
     });
   });
+
+  // dropdown menus
+  function setupDropdowns() {
+    console.log('called');
+    document.querySelectorAll(".dropdown-button").forEach((button) => {
+      button.addEventListener("click", (e) => {
+        let dropdown;
+        if (e.target.tagName === 'svg' || e.target.tagName === 'path') {
+          dropdown = e.currentTarget.nextElementSibling;
+        } else {
+          dropdown = e.target.nextElementSibling;
+        }
+
+        if (dropdown) {
+          dropdown.classList.toggle("hidden");
+          dropdown.classList.toggle("block");
+        } else {
+          console.error("Dropdown element not found");
+        }
+      });
+    });
+  }
+
+  // Call the function initially
+  setupDropdowns();
+  document.addEventListener("DOMContentLoaded", setupDropdowns);
+
+  // Re-attach event listeners after each page navigation
+  document.addEventListener('astro:page-load', setupDropdowns);
 </script>

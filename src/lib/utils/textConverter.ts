@@ -12,8 +12,16 @@ export const slugify = (content: string) => {
 export const markdownify = (content: string) => {
   if (!content) return null;
 
-  return marked.parseInline(content);
+  // Custom renderer to style links
+  const renderer = new marked.Renderer();
+  renderer.link = (href, title, text) => {
+    const titleAttr = title ? ` title="${title}"` : '';
+        return `<a href="${href}"${titleAttr} style="color: #FE6019; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${text}</a>`;
+  };
+
+  return marked.parseInline(content, { renderer });
 };
+
 
 // humanize
 export const humanize = (content: string) => {
