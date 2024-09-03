@@ -37,11 +37,11 @@ travel:
   description: Being part of AEGEE-Barcelona makes traveling around Europe very easy, affordable, and fun!!
   features_list:
     - title: Exchanges
-      content: Every now and then, we organize an exchange with another antenna. That means that some members from that city visit us here for a few days and, in return, we get to visit them back. The hosting antenna is usually responsible for finding cheap accommodation for the incoming people, organizing city tours and other activities.
+      content: Every now and then, we organize an exchange with another antenna. That means that some members from that city visit us here for a few days and, in return, we get to visit them back.<br/> The hosting antenna is usually responsible for finding cheap accommodation for the incoming people, organizing city tours and other activities.
     - title: European events
-      content: As a member of AEGEE-Barcelona, you can apply to other events in Europe. These include short events during the year (link), [Summer Universities](summer-universities), or other official events (link).
+      content: As a member of AEGEE-Barcelona, you can apply to other events in Europe. These include the very popular [Summer Universities](summer-universities), but also dozens of [other events ](european-events) happening throught the continent all year round.<br/>There are all type of European events in AEGEE to suit all personalities, get ready to start packing!
     - title: Get hosted
-      content: Even if you don't find any event that suits your tastes, with AEGEE you will soon have a large network of friends across Europe, that will surely be happy to have you visit them. You can even contact directly any active AEGEE antenna (link) to tell them about your intention to visit their city. They will be glad to meet you, and will help you move around, find cheap accommodation (maybe even host you for free) and show you around the city. We have done it plenty of times with other AEGEEans visiting Barcelona!
+      content: Even if you don't find any event that suits your tastes, with AEGEE you will soon have a large network of friends across Europe, that will surely be happy to have you visit them.<br/>You can even contact directly any active [AEGEE antenna](https://my.aegee.eu/bodies) to tell them about your intention to visit their city. They will be glad to meet you, and will help you move around, find cheap accommodation (maybe even host you for free) and show you around the city. We have done it plenty of times with other AEGEEans visiting Barcelona!
 ---
 
 AEGEE-Barcelona is one of the [80+ active antennas of AEGEE in Europe](https://my.aegee.eu/bodies), and one of the oldest ones. We are open to students and young people from all backgrounds and nationalities.
