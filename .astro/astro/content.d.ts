@@ -474,13 +474,13 @@ declare module 'astro:content' {
   collection: "pages";
   data: InferEntrySchema<"pages">
 } & { render(): Render[".mdx"] };
-"history.md": {
-	id: "history.md";
+"history.mdx": {
+	id: "history.mdx";
   slug: "history";
   body: string;
   collection: "pages";
   data: InferEntrySchema<"pages">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "summer-universities.md": {
 	id: "summer-universities.md";
   slug: "summer-universities";
@@ -514,5 +514,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = typeof import("./../../src/content/config.js");
 }
