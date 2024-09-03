@@ -7,6 +7,13 @@ Young people across Europe come together to develop themselves, develop AEGEE or
 
 There are many types of events happening throughout the continent. Other than the ever-popular [Summer Universities](summer-universities), there are also _Cultural events_, as well as other more "official" events. The full calendar is in the [AEGEE website](https://my.aegee.eu/calendar); from there you can also apply to events while their application period is open (remember that you need to [be a member](become-a-member) of an AEGEE Antenna first).
 
+What to expect in all events:
+* Accomodation and breakfast are always included in the price
+* 1 hot meal is always included
+* Most events include 2 meals (lunch and dinner), SUs only cover 1
+* Most of the times there's a European Night where you bring and share meals and drinks from different countries in Europe
+* Parties are usually free but you pay for your own alcohol
+
 ## Cultural events
 
 These are the most common type of events that happen throughout the year. Think of them as small Summer Universities, where AEGEE Antennas will independently organize "small" events in their respective cities, that usually last from 3 to 5 days and include cultural visits and activities, parties, ice-breaking games and lots and lots of fun!
@@ -23,7 +30,7 @@ European Events events are organised by one or more AEGEE Locals and/or other bo
 
 It's a gathering that's all about fostering community, sharing insights, and keeping the momentum going.
 
-What to Expect:
+What to expect:
 * Meeting a lot of people from your Network Area (our area is called La Nave and it envolves mostly Spanish Atennas)
 * Sharing best practice between Antennas
 * Learn about how other locals work (how they do PR, events, trips...)
@@ -33,7 +40,7 @@ What to Expect:
 
 RTCs are all about honing in on and improving the specific skills considered most crucial for members in the area.
 
-What to Expect:
+What to expect:
 * Meeting a lot of people from your Network Area
 * Attending workshops and trainings by other aegeean trainers
 * Debate sessions about specific and modern topics
