@@ -62,9 +62,12 @@ const page_data = {
               </div>
             </div>
             <div class={`mt-6 lg:col-7 lg:mt-0 lg:order-1`}>
-              <div class="">
-                <p className="mt-6 text-dark lg:-ml-4" set:html={markdownify(item.description)} />
-              </div>
+              <p className="mt-4 text-dark lg:-ml-4" set:html={markdownify(item.description)} />
+              {item.button &&
+                <div class={`mt-6 lg:col-7 lg:order-1`}>
+                  <a href={item.button.link} class="btn btn-outline-primary" target=_blank>{item.button.text}</a>
+                </div>
+              }
             </div>
           </div>
         ))

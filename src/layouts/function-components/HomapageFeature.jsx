@@ -14,7 +14,7 @@ const HomapageFeature = ({ feature_list }) => {
             <span className="icon mb-4 mx-auto">
               <FeatherIcon />
             </span>
-            <div className="text-center">
+            <div className="flex flex-col flex-grow text-center">
               <h3 className="h4 text-xl lg:text-2xl">{item.title}</h3>
               <p>{item.content}</p>
             </div>
