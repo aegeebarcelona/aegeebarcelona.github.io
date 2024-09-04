@@ -27,7 +27,7 @@ const page_data = {
   </section>
 
   <section class="section pt-0">
-    <div class="container">
+    <div class="">
       <div class="w-9/12 mx-auto mb-10 text-center">
         <p class="text-lg" set:html={markdownify(contact.description)} />
         <p class="mt-4" set:html={markdownify(contact.faq_notice)} />
@@ -45,7 +45,7 @@ const page_data = {
             >
               { channel.icon === "email" && <IoMailOutline /> }
               { channel.icon === "instagram" && <IoLogoInstagram /> }
-              <span class="text-lg font-medium ml-4">{channel.name}</span>
+              <span class="text-base leading-none lg:text-lg ml-1 lg:ml-4">{channel.name}</span>
             </a>
           ))}
         </div>
