@@ -7,31 +7,29 @@ const {
 ---
 
 <section class="section">
-  <div class="container">
-    <div class="row items-center justify-between">
-      <div class="md:col-5">
-        <h2 class="text-center md:text-left" set:html={title} />
-      </div>
-      {
-         description && (
-          <div class="mt-6 text-center md:col-6 md:mt-0 md:text-right">
-            <p>{description}</p>
-          </div>
-        )
-      }
+  <div class="row items-center justify-between">
+    <div class="md:col-5">
+      <h2 class="text-center md:text-left" set:html={title} />
     </div>
-    <div class="row mt-14" id="travel-boxes">
-      {
-        features_list.map((item: any, i: number) => (
-          <div class="mb-8 max-md:flex max-md:flex-column lg:col-4">
-            <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
-              <h4 class="my-2">{item.title}</h4>
-              <p set:html={markdownify(item.content)} />
-            </div>
+    {
+       description && (
+        <div class="mt-6 text-center md:col-6 md:mt-0 md:text-right">
+          <p>{description}</p>
+        </div>
+      )
+    }
+  </div>
+  <div class="row mt-14" id="travel-boxes">
+    {
+      features_list.map((item: any, i: number) => (
+        <div class="mb-8 max-md:flex max-md:flex-column lg:col-4">
+          <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
+            <h4 class="my-2">{item.title}</h4>
+            <p set:html={markdownify(item.content)} />
           </div>
-        ))
-      }
-    </div>
+        </div>
+      ))
+    }
   </div>
 </section>
 

@@ -7,71 +7,69 @@ const { elements } = Astro.props;
 ---
 
 <section class="section services">
-  <div class="container">
-    {
-      elements.map((item: any, index: number) => (
-        <div class="gx-5 row mt-12 items-center lg:mt-0">
-          <div class={`lg:col-5 ${index % 2 === 0 ? "order-0" : "order-1"}`}>
-            {item.image && (
-              <div class="relative">
-                <Image
-                class="w-fit lg:w-11/12 object-contain m-6 mx-auto"
-                  alt="service"
-                  width={200}
-                  height={150}
-                  src={item.image}
-                  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 25px;"
-                />
-                <Image
-                  class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2"
-                  src="/images/shape-2.png"
-                  alt=""
-                  height={147}
-                  width={151}
-                />
-              </div>
-            )}
-            {item.video && (
-              <VideoComponent
-                client:load
-                src={item.video.thumbnail}
-                height={370}
-                width={700}
-                title={item.title}
-                video_id={item.video.video_id}
-                video_width="w-[700px]"
-                video_height="h-[370px]"
+  {
+    elements.map((item: any, index: number) => (
+      <div class="gx-5 row mt-12 items-center lg:mt-0">
+        <div class={`lg:col-5 ${index % 2 === 0 ? "order-0" : "order-1"}`}>
+          {item.image && (
+            <div class="relative">
+              <Image
+              class="w-fit lg:w-11/12 object-contain m-6 mx-auto"
+                alt="service"
+                width={200}
+                height={150}
+                src={item.image}
+                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 25px;"
               />
-            )}
-          </div>
-          <div
-            class={`mt-6 lg:col-7 lg:mt-0 ${
-              index % 2 === 0 ? "order-1" : "order-0"
-            }`}
-          >
-            <div class="w-30 px-auto">
-              <h2 class="lg:text-4xl">{item.title}</h2>
-              {item.description.map((paragraph, index) => (
-                  <p class="mt-4" key={index}>{paragraph}</p>
-              ))}
-              {item.button && item.button.enable && (
-                <a class="btn btn-white mt-6" href={item.button.link}>
-                  {item.button.label}
-                </a>
-              )}
-              <ul class="mt-6 text-dark lg:-ml-4">
-                {item.list &&
-                  item.list.map((list: any) => (
-                    <li class="mb-2 flex items-center rounded px-4">
-                      <AiFillCheckCircle className="mr-3 fill-primary text-white" />
-                      {list}
-                    </li>
-                  ))}
-              </ul>
+              <Image
+                class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2"
+                src="/images/shape-2.png"
+                alt=""
+                height={147}
+                width={151}
+              />
             </div>
+          )}
+          {item.video && (
+            <VideoComponent
+              client:load
+              src={item.video.thumbnail}
+              height={370}
+              width={700}
+              title={item.title}
+              video_id={item.video.video_id}
+              video_width="w-[700px]"
+              video_height="h-[370px]"
+            />
+          )}
+        </div>
+        <div
+          class={`mt-6 lg:col-7 lg:mt-0 ${
+            index % 2 === 0 ? "order-1" : "order-0"
+          }`}
+        >
+          <div class="w-30 px-auto">
+            <h2 class="lg:text-4xl">{item.title}</h2>
+            {item.description.map((paragraph, index) => (
+                <p class="mt-4" key={index}>{paragraph}</p>
+            ))}
+            {item.button && item.button.enable && (
+              <a class="btn btn-white mt-6" href={item.button.link}>
+                {item.button.label}
+              </a>
+            )}
+            <ul class="mt-6 text-dark lg:-ml-4">
+              {item.list &&
+                item.list.map((list: any) => (
+                  <li class="mb-2 flex items-center rounded px-4">
+                    <AiFillCheckCircle className="mr-3 fill-primary text-white" />
+                    {list}
+                  </li>
+                ))}
+            </ul>
           </div>
         </div>
-      ))
-    }
-  </div>
+      </div>
+    ))
+  }
 </section>
