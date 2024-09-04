@@ -25,4 +25,4 @@ details:
 
 Becoming a member of AEGEE-Barcelona is a simple 3-stage process. The cost is 10€ per year.
 <br/>
-The only requirement is to be at least 18 years of age. For more questions check out the [FAQ page](faq), or [contact us directly](contact).
+The only requirement is to be at least 18 years of age. For more questions check out the [FAQ page](/faq), or [contact us directly](/contact).

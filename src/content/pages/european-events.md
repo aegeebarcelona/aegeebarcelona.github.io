@@ -5,7 +5,7 @@ draft: false
 
 Young people across Europe come together to develop themselves, develop AEGEE or their Locals all the while having fun and making new friends. Being a part of AEGEE-Barcelona allows you to take part in European events. These are handled through the [my.aegee.eu](https://my.aegee.eu) website.
 
-There are many types of events happening throughout the continent. Other than the ever-popular [Summer Universities](summer-universities), there are also _Cultural events_, as well as other more "official" events. The full calendar is in the [AEGEE website](https://my.aegee.eu/calendar); from there you can also apply to events while their application period is open (remember that you need to [be a member](become-a-member) of an AEGEE Antenna first).
+There are many types of events happening throughout the continent. Other than the ever-popular [Summer Universities](/summer-universities), there are also _Cultural events_, as well as other more "official" events. The full calendar is in the [AEGEE website](https://my.aegee.eu/calendar); from there you can also apply to events while their application period is open (remember that you need to [be a member](/become-a-member) of an AEGEE Antenna first).
 
 What to expect in all events:
 * Accomodation and breakfast are always included in the price
@@ -49,7 +49,7 @@ What to expect:
 
 Summer Universities (SU) are events happening during the summer period. They take place all over the continent, stretching from Russia to Spain and from Cyprus to the UK. Summer Universities are organised by Locals and last from 6 days to 4 weeks. During an SU the participants dive into a new culture, learn about a specific topic or get to know new places: Exploring the multicultural dimension of the European Continent. 
 
-Check [Summer Universities](summer-universities) to learn more.
+Check [Summer Universities](/summer-universities) to learn more.
 
 ## Statutory events
 
