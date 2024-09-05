@@ -4,24 +4,18 @@ title: "The board"
 members:
   title: The current AEGEE-Barcelona board
   member_list:
-    - name: AAA
+    - name: Jesús Hernández
       field: President
-      image: "/images/users/user-1.png"
-    - name: BBB
-      field: Vice president
-      image: "/images/users/user-2.png"
-    - name: CCC
+      image: "/images/aegee/board/president.png"
+    - name: Oluchi Obi
       field: Secretary
-      image: "/images/users/user-3.png"
-    - name: DDD
+      image: "/images/aegee/board/secretary.png"
+    - name: Julia Martínez
       field: Treasurer
-      image: "/images/users/user-1.png"
-    - name: EEE
-      field: Local Event Responsible
-      image: "/images/users/user-2.png"
-    - name: FFF
-      field: Social Media Manager
-      image: "/images/users/user-3.png"
+      image: "/images/aegee/board/tresorer.png"
+    - name: Martín Trullenque
+      field: Board advisor
+      image: "/images/aegee/board/advisor.png"
 
 ---
 
