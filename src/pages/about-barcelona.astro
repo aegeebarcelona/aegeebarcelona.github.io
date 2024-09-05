@@ -8,7 +8,7 @@ import Base from "@/layouts/Base.astro";
 import { getEntryBySlug } from "astro:content";
 
 const about = await getEntryBySlug("barcelona", "about");
-const { counter, elements, travel } = about.data;
+const { counter, fun, travel, others } = about.data;
 const page_data = {
   ...about.data,
   content: about.body,
@@ -28,8 +28,9 @@ const page_data = {
         <PageHeader page_data={page_data} />
       </div>
       <CounterComponent counter={counter} />
-      <SideImage elements={elements} />
+      <SideImage elements={fun} />
       <Boxes travel={travel} />
+      <SideImage elements={others} />
     </div>
   </section>
 </Base>
