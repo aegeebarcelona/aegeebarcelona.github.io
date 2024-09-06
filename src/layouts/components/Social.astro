@@ -35,6 +35,8 @@ import {
   IoMail,
 } from "react-icons/io5";
 
+import { PiLinktreeLogo } from "react-icons/pi";
+
 const {
   facebook,
   twitter,
@@ -67,6 +69,7 @@ const {
   address,
   skype,
   website,
+  linktree,
 } = source;
 ---
 
@@ -445,6 +448,20 @@ const {
           rel="noopener noreferrer nofollow"
         >
           <IoGlobeOutline />
+        </a>
+      </li>
+    )
+  }
+  {
+    linktree && (
+      <li class="inline-block">
+        <a
+          aria-label="linktree"
+          href={linktree}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <PiLinktreeLogo/>
         </a>
       </li>
     )

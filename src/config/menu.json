@@ -58,20 +58,20 @@
 
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Contact",
+      "name": "Contact us!",
       "url": "/contact"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "About us",
+      "url": "/about-barcelona"
     },
     {
-      "name": "Changelog",
-      "url": "/changelog"
+      "name": "Activity calendar",
+      "url": "/calendar"
+    },
+    {
+      "name": "Summer Universities",
+      "url": "/summer-universities"
     }
   ]
 }
