@@ -3,7 +3,7 @@ title: "Calendar"
 page_title: "Activity calendar"
 draft: false
 
-cal_file: "/myevents.ics"
+cal_file: "/basic.ics"
 
 button:
     enable: true
