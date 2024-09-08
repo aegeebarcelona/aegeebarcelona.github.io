@@ -51,6 +51,10 @@ Summer Universities (SU) are events happening during the summer period. They tak
 
 Check [Summer Universities](/summer-universities) to learn more.
 
+### New Year Events
+
+The _Winter Version_ of a Summer University. A New Year Event is an event organised by an AEGEE local where every AEGEE member can apply for. The event takes place during New Years Eve and you will celebrate the countdown for the New Year over there. The events can be all over Europe, from the Russian cold to the nice temperature of the Canary Islands.
+
 ## Statutory events
 
 ### Agora

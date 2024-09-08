@@ -22,7 +22,7 @@ fun:
   - title: Fun
     description:
       - Feel like a drink after work? Party after finishing your uni semester? Chill out with board games? Go hiking far away from the city? All of them and much more? We've got you covered ;)
-      - We regurarly organize activities with our active members. Their price is not included with your AEGEE-Barcelona membership, but we usually try to make them very low-budget and look out for the best deals.
+      - We regurarly organize activities with our active members. Their price is not included with your AEGEE-Barcelona membership, but we usually try to make them very low-budget and look out for the best deals 💸.
       - Think of it more like a group of friends hanging out now and then. We are always happy to have new people join in, and everyone is welcome to suggest new plans!
       - Check out the next planned activities on the calendar, and stay tuned on our social media for any announcement.
     image: "/images/aegee/calcotada_2.jpg"
@@ -61,10 +61,10 @@ others:
     image: "/images/aegee/organize.jpeg"
   - title: Be part of an awesome comunity
     description:
-      - With more than 30 years of history, our mascot _Bonobo_ (based on the gorilla [_Snowflake_](https://en.wikipedia.org/wiki/Snowflake_(gorilla))) has seen plenty of members grow with AEGEE-Barcelona. **Are you ready to be part of the new generation?**
+      - With more than 30 years of history, our mascot _Bonobo_ (based on the gorilla [_Snowflake_](https://en.wikipedia.org/wiki/Snowflake_(gorilla))) has seen plenty of members grow with AEGEE-Barcelona. **Are you ready to be part of the new generation? 💪**
     image: "/images/aegee/bonobo_crop.jpg"
 ---
 
-AEGEE-Barcelona is one of the [80+ active antennas of AEGEE in Europe](https://my.aegee.eu/bodies), and one of the oldest ones. We are open to students and young people from all backgrounds and nationalities.
+AEGEE-Barcelona is one of the [100+ active antennas of AEGEE in Europe](https://my.aegee.eu/bodies), and one of the oldest ones. We are open to students and young people from all backgrounds and nationalities.
 \
 We organize small local activities in Barcelona and its surroundings all year long, as well as bigger events where other AEGEEans come to Barcelona. Being part of a European network, we are also in close contact with other antennas and are able to organize activities and trips across the entire continent!
