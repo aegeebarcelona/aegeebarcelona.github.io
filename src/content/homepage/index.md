@@ -51,6 +51,10 @@ testimonial:
   enable: true
   title: What some of our members have to say
   testimonial_list:
+    - author: Nika
+      avatar: "/images/aegee/testimonials/nika_crop.png"
+      organization: Erasmus student from Slovenia
+      content: AEGEE has introduced me to a wonderful community of open-minded and kindhearted individuals. I’ve made friendships that I know will last a lifetime. Both the local (especially in Barcelona 😉) and international events are the best of fun. I highly recommend it to anyone looking to expand their horizons!
     - author: Silia
       avatar: "/images/aegee/testimonials/silia_crop.png"
       organization: Master's student form Greece
@@ -59,8 +63,4 @@ testimonial:
       avatar: "/images/aegee/testimonials/alvaro_crop.png"
       organization: PhD student from Barcelona
       content: Being part of AEGEE-Barcelona has given me the opportunity to meet with people from all over Europe, right here in my own city. It’s amazing how quickly you can connect with people from different cultures and make lifelong friends across the continent, while exploring Barcelona’s vibrant city events and natural landscapes. I highly recommend it to anyone wanting to explore Europe without leaving their home city!
-    - author: Nika
-      avatar: "/images/aegee/testimonials/nika_crop.png"
-      organization: Erasmus student from Slovenia
-      content: AEGEE has introduced me to a wonderful community of open-minded and kindhearted individuals. I’ve made friendships that I know will last a lifetime. Both the local (especially in Barcelona 😉) and international events are the best of fun. I highly recommend it to anyone looking to expand their horizons!
 ---
