@@ -54,7 +54,7 @@ others:
     description:
       - "AEGEE organizes plenty of training events and sessions of just about anything: leadership, human rights, climate activisim, budgeting, project managing, artificial intelligence, etc."
       - Some of them are in person (with meals, accommodation and others included in the fee, as any other [European event](/european-events)), others are online. You will surely find some that match your interests!
-    image: "/images/aegee/eot.jpeg"
+    image: "/images/aegee/epm_crop.jpg"
   - title: Organize
     description:
       - In AEGEE-Barcelona we organize small local activities regularly, but also larger European events, that require tons of preparation and organization efforts. We'd love to keep the momentum going, but for this we require motivated members that volunteer to help make it happen.
