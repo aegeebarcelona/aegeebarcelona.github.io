@@ -23,11 +23,11 @@ The maximum price that an SU can have is defined to be **14€ per day**. Of cou
 
 ##### What is included in the price
 
-- Accommodation during all the event: in a hostel, university residence, camping or a gym. This depends on each SU.
-- Breakfast and a hot meal every day. You will be responsible for the other meal and will be able to go to restaurants, but with the advice of the locals 🙂. If you have any dietary requirements (vegetarian, vegan, gluten-free, lactose-free, etc.) don't worry! The organizers are experts in these topics and can provide for your needs.
-- Transportation during the event.
-- Entry tickets to monuments, activities, museums and anything else included in the program of the SU.
-- Social program, because you will also go out at night!
+- 🏡 Accommodation during all the event: in a hostel, university residence, camping or a gym. This depends on each SU.
+- 🥐 Breakfast and a hot meal every day. You will be responsible for the other meal and will be able to go to restaurants, but with the advice of the locals 🙂. If you have any dietary requirements (vegetarian, vegan, gluten-free, lactose-free, etc.) don't worry! The organizers are experts in these topics and can provide for your needs.
+- 🚋 Transportation during the event.
+- 🎫 Entry tickets to monuments, activities, museums and anything else included in the program of the SU.
+- 💃🏼 Social program, because you will also go out at night!
 
 ##### What is not included
 
