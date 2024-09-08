@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "AEGEE-Barcelona",
-    "base_url": "https://aegeebarcelona.github.io",
+    "base_url": "https://www.aegeebarcelona.org",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
