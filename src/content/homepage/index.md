@@ -1,7 +1,9 @@
 ---
 banner:
   title: "AEGEE-Barcelona"
-  content: "Welcome to AEGEE-Barcelona, your gateway to unforgettable experiences and lifelong friendships! As part of the vibrant European student network, we bring you the best of both worlds: exciting local events like parties, dinners, and outdoor adventures, as well as thrilling trips across Europe. Whether it’s sunbathing in Tenerife, exploring the iconic landmarks of London, or soaking up the history in Athens, our activities span the entire continent, all year round. Join us and become part of a dynamic community where you can make friends in Barcelona and build a network that stretches across Europe. Your adventure starts here! 🌍✨"
+  content: "Welcome to AEGEE-Barcelona! 🎉 We’re all about creating unforgettable experiences and lifelong friendships. Join us for fun local events like parties, dinners, and outdoor adventures. Plus, we organize amazing trips across Europe—think sunbathing in Tenerife, exploring London’s iconic landmarks, or diving into history in Athens.
+<br>
+Become part of a dynamic community where you can make friends in Barcelona and build a network that stretches across Europe. Your adventure starts here, and we can’t wait to have you with us! 🌍✨"
   image: /images/aegee/DSC_4347_2.jpg
   button:
     label: Learn more
