@@ -8,13 +8,23 @@ const { homepage_tab, our_service } = service;
 
 import shape2 from "../../assets/images/shape-2.png";
 
+const imageImports = import.meta.glob('/src/assets/images/**/*.{jpg,jpeg,png,webp,JPG,JPEG}');
+
 // Dynamically import images from the src directory
 const serviceWithImages = await Promise.all(
   our_service.map(async (service) => {
     let imageImport = null;
+    
     if (service.image) {
-      imageImport = (await import(service.image)).default; // Get the default export path
+      const imagePath = `/src/assets/images/${service.image}`;
+      console.log('lol');
+      
+      if (imageImports[imagePath]) {
+        // Dynamically load the image using the path
+        imageImport = (await imageImports[imagePath]()).default;
+      }
     }
+    
     return {
       ...service,
       image: imageImport

@@ -35,14 +35,14 @@ service:
   our_service:
     - title: Join us for weekly local activities...
       description: Evening drinks, board games and movie nights, hikes, parties, barbecues... We organize small events every few days. Always a bit of everything. Everyone is welcome!
-      image: "../../assets/images/aegee/costa_brava.jpg"
+      image: "aegee/costa_brava.jpg"
       button:
         label: Activity calendar
         link: "calendar"
         enable: true
     - title: ...or go international with events all over Europe
       description: Being part of AEGEE-Barcelona lets you participate in events abroad organized by other Antennas. From an intense weekend in northern Europe to a two-week Summer University on the shores of the Caspian sea.
-      image: "../../assets/images/aegee/calcotada.jpg"
+      image: "aegee/calcotada.jpg"
       button:
         label: Know more
         link: "about-europe"

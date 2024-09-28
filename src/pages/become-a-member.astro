@@ -15,13 +15,23 @@ const page_data = {
   content: become_a_member.body,
 };
 
+const imageImports = import.meta.glob('/src/assets/images/**/*.{jpg,jpeg,png,webp,JPG,JPEG}');
+
 // Dynamically import images from the src directory
-const stepsWithImages= await Promise.all(
+const stepsWithImages = await Promise.all(
   steps.map(async (item) => {
     let imageImport = null;
+    
     if (item.image) {
-      imageImport = (await import(item.image)).default; // Get the default export path
+      const imagePath = `/src/assets/images/${item.image}`;
+      console.log('lol');
+      
+      if (imageImports[imagePath]) {
+        // Dynamically load the image using the path
+        imageImport = (await imageImports[imagePath]()).default;
+      }
     }
+    
     return {
       ...item,
       image: imageImport

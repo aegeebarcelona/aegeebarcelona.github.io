@@ -8,13 +8,23 @@ const { elements } = Astro.props;
 
 import shape2 from "../../assets/images/shape-2.png";
 
+const imageImports = import.meta.glob('/src/assets/images/**/*.{jpg,jpeg,png,webp,JPG,JPEG}');
+
 // Dynamically import images from the src directory
 const serviceWithImages = await Promise.all(
   elements.map(async (service) => {
     let imageImport = null;
+    
     if (service.image) {
-      imageImport = (await import(service.image)).default; // Get the default export path
+      const imagePath = `/src/assets/images/${service.image}`;
+      console.log('lol');
+      
+      if (imageImports[imagePath]) {
+        // Dynamically load the image using the path
+        imageImport = (await imageImports[imagePath]()).default;
+      }
     }
+    
     return {
       ...service,
       image: imageImport
@@ -32,7 +42,7 @@ const serviceWithImages = await Promise.all(
             <div class="relative">
               <Image
               class="w-fit lg:w-11/12 object-contain m-6 mx-auto"
-                alt="service"
+                alt="image"
                 width={800}
                 src={item.image}
                 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 25px;"
