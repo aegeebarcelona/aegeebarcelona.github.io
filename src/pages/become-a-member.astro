@@ -14,6 +14,30 @@ const page_data = {
   ...become_a_member.data,
   content: become_a_member.body,
 };
+
+const imageImports = import.meta.glob('/src/assets/images/**/*.{jpg,jpeg,png,webp,JPG,JPEG}');
+
+// Dynamically import images from the src directory
+const stepsWithImages = await Promise.all(
+  steps.map(async (item) => {
+    let imageImport = null;
+    
+    if (item.image) {
+      const imagePath = `/src/assets/images/${item.image}`;
+      console.log('lol');
+      
+      if (imageImports[imagePath]) {
+        // Dynamically load the image using the path
+        imageImport = (await imageImports[imagePath]()).default;
+      }
+    }
+    
+    return {
+      ...item,
+      image: imageImport
+    };
+  })
+);
 ---
 
 <Base
@@ -31,7 +55,7 @@ const page_data = {
 
       <div class="row mt-14">
         {
-          steps.map((item: any, i: number) => (
+          stepsWithImages.map((item: any, i: number) => (
             <div class="mt-10 text-center sm:col-6 md:col-4 md:mb-0">
               <div
                 class={`relative mx-auto mb-8 flex h-[184px] w-[184px] items-center justify-center rounded-xl bg-white p-4 shadow-lg ${

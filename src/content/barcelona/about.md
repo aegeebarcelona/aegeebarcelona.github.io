@@ -25,7 +25,7 @@ fun:
       - We regurarly organize activities with our active members. Their price is not included with your AEGEE-Barcelona membership, but we usually try to make them very low-budget and look out for the best deals 💸.
       - Think of it more like a group of friends hanging out now and then. We are always happy to have new people join in, and everyone is welcome to suggest new plans!
       - Check out the next planned activities on the calendar, and stay tuned on our social media for any announcement.
-    image: "/images/aegee/calcotada_2.jpg"
+    image: "aegee/calcotada_2.jpg"
     button:
       label: Activity calendar
       link: "calendar"
@@ -49,20 +49,20 @@ others:
     description:
       - As a member of AEGEE, you can take part in statutory events, in which new ideas and projects with a European scope are discussed (more information on the [European events page](/european-events)).
       - You can also become part of AEGEE-Europe's governing bodies and work on AEGEE from a European level, deciding on the future directions of the association as a whole, and coorinating all the local Antennas.
-    image: "/images/aegee/agora.jpg"
+    image: "aegee/agora.jpg"
   - title: Learn
     description:
       - "AEGEE organizes plenty of training events and sessions of just about anything: leadership, human rights, climate activisim, budgeting, project managing, artificial intelligence, etc."
       - Some of them are in person (with meals, accommodation and others included in the fee, as any other [European event](/european-events)), others are online. You will surely find some that match your interests!
-    image: "/images/aegee/epm_crop.jpg"
+    image: "aegee/epm_crop.jpg"
   - title: Organize
     description:
       - In AEGEE-Barcelona we organize small local activities regularly, but also larger European events, that require tons of preparation and organization efforts. We'd love to keep the momentum going, but for this we require motivated members that volunteer to help make it happen.
-    image: "/images/aegee/organize.jpeg"
+    image: "aegee/organize.jpeg"
   - title: Be part of an awesome comunity
     description:
       - With more than 30 years of history, our mascot _Bonobo_ (based on the gorilla [_Snowflake_](https://en.wikipedia.org/wiki/Snowflake_(gorilla))) has seen plenty of members grow with AEGEE-Barcelona. **Are you ready to be part of the new generation? 💪**
-    image: "/images/aegee/bonobo_crop.jpg"
+    image: "aegee/bonobo_crop.jpg"
 ---
 
 AEGEE-Barcelona is one of the [100+ active antennas of AEGEE in Europe](https://my.aegee.eu/bodies), and one of the oldest ones. We are open to students and young people from all backgrounds and nationalities.

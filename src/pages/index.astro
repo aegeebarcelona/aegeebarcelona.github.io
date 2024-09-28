@@ -9,11 +9,13 @@ import { getEntryBySlug } from "astro:content";
 
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, key_features, service, testimonial } = homepage.data;
+
+import banner_img from "../assets/images/aegee/DSC_4347_2.jpg"
 ---
 
 <Base>
   <!-- banner -->
-  <Banner banner={banner} />
+  <Banner banner={banner} image={banner_img} />
   <!-- key features -->
   <KeyFeatures key_features={key_features} />
   <!-- service -->
