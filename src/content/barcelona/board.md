@@ -6,16 +6,16 @@ members:
   member_list:
     - name: Jesús Hernández
       field: President
-      image: "/images/aegee/board/president.png"
+      image: "/images/board/president.png"
     - name: Oluchi Obi
       field: Secretary
-      image: "/images/aegee/board/secretary.png"
+      image: "/images/board/secretary.png"
     - name: Julia Martínez
       field: Treasurer
-      image: "/images/aegee/board/tresorer.png"
+      image: "/images/board/treasurer.png"
     - name: Martín Trullenque
       field: Board advisor
-      image: "/images/aegee/board/advisor.png"
+      image: "/images/board/advisor.png"
 
 ---
 

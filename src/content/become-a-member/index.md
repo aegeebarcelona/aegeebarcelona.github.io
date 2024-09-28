@@ -6,13 +6,13 @@ page_title: Join AEGEE-Barcelona
 steps:
   - title: 1. Enter personal details
     description: Let us know about you.
-    image: "/images/form.png"
+    image: "../assets/images/form.png"
   - title: 2. Make the payment
     description: Settle your place within the ranks of AEGEE-Barcelona.
-    image: "/images/card.png"
+    image: "../assets/images/card.png"
   - title: 3. Join the European website
     description: Where you can sign up for international adventures.
-    image: "/images/network.png"
+    image: "../assets/images/network.png"
 
 details:
   - title: 1. New member information
