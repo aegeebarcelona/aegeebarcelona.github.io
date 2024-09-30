@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "AEGEE-Barcelona",
-    "base_url": "https://www.aegeebarcelona.org",
+    "base_url": "https://www.aegee-barcelona.org",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/favicon.png",
