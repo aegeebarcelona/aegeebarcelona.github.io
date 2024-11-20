@@ -7,11 +7,9 @@ import Cta from "@/layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { markdownify } from "@/lib/utils/textConverter";
-import Calendar from "@/layouts/function-components/Calendar.jsx";
-import DownloadButton from "@/layouts/function-components/DownloadButton.jsx";
 
 const calendar = await getEntryBySlug("calendar", "index");
-const { cal_file, button } = calendar.data;
+const { cal_id } = calendar.data;
 const page_data = {
   ...calendar.data,
   content: calendar.body,
@@ -32,16 +30,9 @@ const page_data = {
         <PageHeader page_data={page_data} />
       </div>
 
-      <div>
-        <Calendar file={cal_file} client:load />
+      <div class="mt-6" style="border-radius: 15px; overflow: hidden;">
+        <iframe src=`https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FMadrid&showPrint=0&showNav=0&showTitle=0&color=%23FE6019&bgcolor=%23FFFF00&showTz=0&mode=AGENDA&showDate=0&showTabs=0&src=${cal_id}%40group.calendar.google.com` style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
-
-      {button.enable &&
-        <div class="mx-2 lg:mx-16 flex flex-col lg:flex-row lg:items-center lg:justify-between max-lg:text-center">
-          <DownloadButton file={cal_file}/>
-          <p class="mt-4 lg:mt-0 lg:ml-4">{button.description}</p>
-        </div>
-      }
 
     </div>
   </section>

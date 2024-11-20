@@ -3,11 +3,8 @@ title: "Calendar"
 page_title: "Activity calendar"
 draft: false
 
-cal_file: "/basic.ics"
-
-button:
-    enable: true
-    description: Download a .ics file with all the event information. You can import it into your favorite calendar app, such as Google Calendar, iCloud Calendar or Outlook. 
+# Get the calendar ID from GCal website -> Calendar configuration -> Calendar integration -> Calendar ID. Ignore the last "@group.calendar.google.com" part
+cal_id: "c_b94bfbfbed06fc73a52c0dc9fd39d14d2de782a09bc19ad95b1d63b06c87c0a5"
 ---
 
 Upcoming local activities of AEGEE-Barcelona. For European events, check the official calendar at [my.aegee.eu](https://my.aegee.eu/calendar).
