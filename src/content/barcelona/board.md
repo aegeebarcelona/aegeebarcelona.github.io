@@ -4,18 +4,24 @@ title: "The board"
 members:
   title: The current AEGEE-Barcelona board
   member_list:
-    - name: Jesús Hernández
+    - name: Anna Shuang Folch
       field: President
       image: "/images/board/president.png"
-    - name: Oluchi Obi
+    - name: Miriam Lara
       field: Secretary
       image: "/images/board/secretary.png"
-    - name: Julia Martínez
+    - name: Xavier Artal
       field: Treasurer
       image: "/images/board/treasurer.png"
-    - name: Martín Trullenque
+    - name: Mariam Zaidi
+      field: Local events
+      image: "/images/board/localEvents.png"
+    - name: Jordi Gibert
+      field: Vice-president
+      image: "/images/board/vicepresident.png"
+    - name: Jesús Hernández
       field: Board advisor
-      image: "/images/board/advisor.png"
+      image: "/images/board/president_old.png"
 
 ---
 
