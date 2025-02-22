@@ -22,6 +22,9 @@ members:
     - name: Jesús Hernández
       field: Board advisor
       image: "/images/board/president_old.png"
+    - name: Julia Segoviano
+      field: Board advisor
+      image: "/images/board/boardAdvisor.png"
 
 ---
 
